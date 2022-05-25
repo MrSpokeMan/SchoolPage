@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  padding: 2%;
+  background: linear-gradient(#303030, #000000);
+  border-bottom: 3px solid #080;
+}
+
+header img {
+  border-radius: 10%;
+  margin-top: 1%;
+  margin-right: 15%;
+}
+
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav a {
+  padding: 2%;
+  border-right: 2px solid #444;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+header nav a img {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 30%;
+}
+
+.nav__icon {
+  max-width: 50px;
+  border-right: none;
+}
+
+.nav__icon--fb img {
+  border-radius: 50%;
+}
+
+.nav__icon--fb img:hover {
+  background: linear-gradient(to top, #0062e0, #19afff);
+}
+
+.nav__icon--instagram img:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+/* a:hover {
+  text-decoration: underline;
+} */
+
+a {
+  display: inline-block;
+  position: relative;
+  color: #fffa;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0.9, 1, -0.26);
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 0 0 40% 40%;
+}
+
+figure figcaption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 55%;
+  font-size: 40px;
+  text-shadow: 5px 5px #000;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+section {
+  display: grid;
+  padding: 20px 0;
+  background: url("../zdjecia/wro2.jpg") no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 5px 5px #000;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section nav a:hover {
+  box-shadow: 10px 10px 10px #191919;
+  transition: ease-in 0.5s;
+  filter: saturate(300%);
+}
+
+section nav {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 100px 100px;
+  padding-bottom: 5%;
+}
+
+section nav a {
+  max-width: 350px;
+  font-size: 20px;
+  color: #fff;
+}
+
+main figure {
+  position: relative;
+  padding: 10% 5%;
+}
+
+main figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  filter: blur(3px);
+  object-fit: cover;
+  border-radius: 0;
+}
+
+blockquote {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  background-color: #00000063;
+  font-size: 20px;
+}
+
+q {
+  padding: 5%;
+}
+
+.door,
+.dzwonki,
+.info {
+  text-align: center;
+  font-weight: 500;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  color: black;
+  background: white;
+}
+
+main div main div:nth-child(1) {
+  margin-left: 5%;
+  height: 250px;
+}
+
+main div:nth-child(2) {
+  margin-top: 10%;
+  margin-left: 30%;
+  height: 220px;
+  width: 350px;
+}
+
+main div:nth-child(3) {
+  margin-left: 50%;
+  height: 350px;
+  margin-top: -5%;
+}
+
+footer {
+  font-size: 20px;
+  border-top: 3px solid #080;
+  background: linear-gradient(#303030, #000000);
+  padding: 2%;
+}
+
+footer a {
+  display: block;
+  color: #fff;
+}
+
+address {
+  padding: 2%;
+}
